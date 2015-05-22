@@ -15,7 +15,6 @@ describe("Admin API", function()
   end)
 
   describe("/apis/", function()
-
     local BASE_URL = spec_helper.API_URL.."/apis/"
 
     describe("POST", function()
@@ -51,6 +50,7 @@ describe("Admin API", function()
     end)
 
     describe("PUT", function()
+
       setup(function()
         spec_helper.drop_db()
       end)
